@@ -6,29 +6,173 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
 %\motto{And Ken Said Let Everything Be A File...And Then There Was Light...}
-\chapter{TRIGONOMETRIC SERIES AND FOURIER SERIES. AUXILIARY RESULTS}
+\chapter{THE REAL AND COMPLEX NUMBER SYSTEMS}
 \label{intro} % Always give a unique label
 % use \chaptermark{}
 % to alter or adjust the chapter heading in the running head
 
 
-%\abstract{
-%    Nowadays an applied mathematicians must utilize a computer in order to handle their workflow.
-%    Computers must have an operating system(OS) and that is set in the stone. As to what OS
-%    is optimal, there are no clear answers obviously. Every OS has its pros and cons. I adopted
-%    the Unix-like(Unix, Linux, POSIX) OSs for now as I meticulously observed my mentors during my college years and still continue 
-%    to do so. This chapter tries to help you determine whether you 
-%    would benefit from those OSs too and if yes formulate a guideline for its learning process.
-%}
-\section{Trigonometric series}
-These are series of the form
-\begin{equation}
-    \frac{1}{2}a_{0} + \sum_{\nu=1}^{\infty} (a_{\nu}\cos{\nu x}+b_{\nu}\sin{\nu x}).
-\end{equation}
+% \abstract{
+    % test
+% }
+\section{INTRODUCTION}
+A satisfactory discussion of the main concepts of analysis (such as convergence, continuity, differentiation, and integration) 
+must be based on an accurately defined number concept. We shall not, however, enter into any discussion of 
+the axioms that govern the arithmetic of the integers, but assume familiarity with the rational numbers 
+(i.e., the numbers of the form $\frac{m}{n}$, where $m$ and $n$ are integers and $n\not=0$).\\
+The rational number system is inadequate for many purposes, both as a field and as an ordered set. (These terms will 
+be defined in Secs. ~\ref{to be added} and ~\ref{to be added}.) For instance, there is no rational $p$ such that 
+$p^2=2$. (We shall prove this presently.) This leads to the introduction of so-called ``irrational numbers'' 
+which are often written as infinite decimal expansions and are considered to be ``approximated'' by the corresponding 
+finite decimals. Thus the sequence
+\begin{equation*}
+    1, 1.4, 1.41, 1.414, 1.4142, \dots
+\end{equation*}
+``tends to $\sqrt{2}$.'' But unless the irrational number $\sqrt{2}$ has been clearly defined, the question must arise: 
+Just what is it that this sequence ``tends to''?\\
+\indent This sort of question can be answered as soon as the so-called ``real number system'' is constructed.
 
-\noindent Here $x$ is a real variable and \textit{coefficients} $a_0,a_1,b_1,\dots$ are independent 
-of $x$. We may usually suppose, if we wish , that the coefficients are real; when they 
-are complex.
+\subsection*{\textbf{Example}}
+\label{subsec:1}
+We now show that the equation
+\begin{equation}
+    \label{eq:01}
+    p^2=2
+\end{equation}
+is not satisfied by any rational $p$. If there were such a $p$, we could write $p=\frac{m}{n}$ where $m$ and $n$ 
+are integers that are not both even. Let us assume this is done. Then ~\ref{eq:01} implies
+\begin{equation}
+    \label{eq:02}
+    m^2=2n^2,
+\end{equation}
+This shows that $m^2$ is even. Hence $m$ is even (if $m$ were odd, $m^2$ would be odd), and so $m^2$ is divisible by $4$.
+It follows that the right side of ~\ref{eq:02} is divisible by $4$, so that $n^2$ is even, which implies that $n$ 
+is even.\\
+
+~\cite{ARTIN}
+
+
+
+\subsection*{\textbf{Remark}}
+\label{sec:2}
+
+\subsection*{\textbf{Definition}}
+\label{sec:3}
+
+\subsection*{\textbf{Definition}}
+\label{sec:4}
+
+\section{ORDERED SETS}
+
+
+
+
+
+\subsection*{\textbf{Example}}
+\label{sec:5}
+\subsection*{\textbf{Example}}
+\label{sec:6}
+\subsection*{\textbf{Example}}
+\label{sec:7}
+\subsection*{\textbf{Example}}
+\label{sec:8}
+\subsection*{\textbf{Example}}
+\label{sec:9}
+\subsection*{\textbf{Example}}
+\label{sec:10}
+\subsection*{\textbf{Example}}
+\label{sec:11}
+
+
+\section{FIELDS}
+
+\subsection*{\textbf{Example}}
+\label{sec:12}
+
+
+\subsection*{\textbf{Example}}
+\label{sec:14}
+\subsection*{\textbf{Example}}
+\label{sec:15}
+\subsection*{\textbf{Example}}
+\label{sec:16}
+\subsection*{\textbf{Example}}
+\label{sec:17}
+\subsection*{\textbf{Example}}
+\label{sec:18}
+
+
+\section{THE REAL FIELD}
+
+\subsection*{\textbf{Example}}
+\label{sec:19}
+\subsection*{\textbf{Example}}
+\label{sec:20}
+\subsection*{\textbf{Example}}
+\label{sec:21}
+\subsection*{\textbf{Example}}
+\label{sec:22}
+
+
+\section*{THE EXTENDED REAL NUMBER SYSTEM}
+\subsection*{\textbf{Example}}
+\label{sec:23}
+
+
+
+\section{THE COMPLEX FIELD}
+
+\subsection*{\textbf{Example}}
+\label{sec:24}
+
+\subsection*{\textbf{Example}}
+\label{sec:25}
+
+
+\subsection*{\textbf{Example}}
+\label{sec:26}
+
+\subsection*{\textbf{Example}}
+\label{sec:27}
+\subsection*{\textbf{Example}}
+\label{sec:28}
+\subsection*{\textbf{Example}}
+\label{sec:29}
+\subsection*{\textbf{Example}}
+\label{sec:30}
+\subsection*{\textbf{Example}}
+\label{sec:31}
+\subsection*{\textbf{Example}}
+\label{sec:32}
+\subsection*{\textbf{Example}}
+\label{sec:33}
+\subsection*{\textbf{Example}}
+\label{sec:34}
+\subsection*{\textbf{Example}}
+\label{sec:35}
+
+\section{EUCLIDEAN SPACES}
+\subsection*{\textbf{Example}}
+\label{sec:36}
+
+\subsection*{\textbf{Example}}
+\label{sec:37}
+\subsection*{\textbf{Example}}
+\label{sec:38}
+
+\section{APPENDIX}
+
+\subsection*{\textbf{Step}}
+\label{sec:37}
+
+
+\section{EXERCISES}
+
+
+
+
+
+
 
 
 
@@ -73,7 +217,7 @@ however, for multiline equations we recommend to use the \verb|eqnarray| environ
 &=&(d-\alpha+1) \int\limits_{d(y)}^\infty
 \frac{\mu(B(y,r))}{r^{d-\alpha+2}}\,dr \le (d-\alpha+1)
 \int\limits_{d(y)}^\infty \frac{r^{d-\alpha}}{r^{d-\alpha+2}}\,dr
-\label{eq:01}
+\label{eq:10}
 \end{eqnarray}
 
 \enlargethispage{24pt}
@@ -363,4 +507,4 @@ problem is described here. The problem is described here.
 (b) The second part of the problem is described here.
 \end{prob}
 
-\input{references}
+%\input{references}
