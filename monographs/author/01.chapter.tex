@@ -48,8 +48,71 @@ are integers that are not both even. Let us assume this is done. Then ~\ref{eq:0
 This shows that $m^2$ is even. Hence $m$ is even (if $m$ were odd, $m^2$ would be odd), and so $m^2$ is divisible by $4$.
 It follows that the right side of ~\ref{eq:02} is divisible by $4$, so that $n^2$ is even, which implies that $n$ 
 is even.\\
+\indent The assumption that ~\ref{eq:01} holds thus leads to the conclusion that both $m$ and $n$ are even, contrary 
+to our choice of $m$ and $n$. Hence ~\ref{eq:01} is impossible for the rational $p$.\\
+\indent We now examine this situation a little more closely. Let $\mathbf{A}$ be the set of all positive rationals $p$ such that $p^2 < 2$ 
+and let $B$ consist of all positive rationals $p$ such that $^2 > 2$. We shall show that $\mathbf{A}$ \textit{contains no largest number and}
+ $\mathbf{B}$ \textit{contains no smallest}.\\
+ \indent More explicitly, for every $p$ in $\mathbf{A}$ we can find a rational $p$ in $\mathbf{A}$ such that 
+ $p<q$, and for every $p$ in $\mathbb{B}$ we can find a rational $q$ in $\mathbf{B}$ such that $q<p$.\\
+ \indent To do this, we associate with each rational $p>0$ the number
+ \begin{equation}
+    \label{eq:03}
+    q=p-\frac{p^2-2}{p+2}=\frac{2p+2}{p+2}
+ \end{equation}
+\noindent Then
+\begin{equation}
+    \label{eq:04}
+    q^2-2=\frac{2(p^2-2)}{(p+2)^2}
+\end{equation}
+\indent If $p$ is in $\mathbf{A}$ then $p^2-2<0$, ~\ref{eq:03} shows that $q>p$, and ~\ref{eq:04} shows that
+$q^2<2$. Thus $q$ is in $\mathbf{A}$.\\
+\indent If $p$ is in $\mathbf{B}$ then $p^2-2>0$, ~\ref{eq:03} shows that $0<q<p$, and ~\ref{eq:04} shows that
+$q^2>2$. Thus $q$ is in $\mathbf{B}$.
+
+
 
 ~\cite{ARTIN}
+
+\begin{definition}
+    A field is a set $F$ with two operations, called \textit{addition} and \textit{multiplication},
+    which satisfy the following so-called ``field axioms'' ~\ref{AXIOMSA}, and ~\ref{AXIOMSM}, and ~\ref{AXIOMSD}:
+
+
+\subsubsection*{\textbf{Axioms for addition}}
+\label{AXIOMSA}
+\begin{itemize}
+    \item If $x \in F$ and $y \in F$, then their sum $x+y$ is in $F$.
+    \item Addition is commutative: $x+y=y+x$ for all $x,y \in F$
+    \item Addition is associative: $(x+y)+z=x+(y+z)$ for all $x,y,z \in F$.
+    \item $F$ contains an element $0$ such that $0+x=x$ for every $x \in F$.
+    \item To every $x \in F$ corresponds an element $-x \in F$ such That
+        \begin{equation*}
+            x+(-x)=0.
+        \end{equation*} 
+\end{itemize}
+\subsubsection*{\textbf{Axioms for multiplication}}
+\label{AXIOMSM}
+\begin{itemize}
+    \item If $x \in F$ and $y \in F$, then their product $xy$ is in $F$.
+    \item Multiplication is commutative: $xy=yx$ for all $x,y \in F$.
+    \item Multiplication is associative: $(xy)z=x(yz)$ for all $x,y,z \in F$.
+    \item $F$ contains an element $1 \neq 0$ such that $1x=x$ for every $x \in F$.
+    \item If $x \in F$ and $x \neq 0$ then there exists an element $1/x \in F$ such that
+    \begin{equation*}
+        x.(1/x)=1.
+    \end{equation*}
+\end{itemize}
+
+\subsubsection*{\textbf{The distributive law}}
+\label{AXIOMSD}
+
+\begin{equation*}
+    x(y+z)=xy+xz
+\end{equation*}
+holds for all $x,y,z \in F$.
+\end{definition}
+
 
 \begin{theorem}
 Theorem IS BEST USED LIKE THIS
