@@ -909,6 +909,10 @@ INPUT ./00.book.toc
 INPUT 00.book.toc
 INPUT 00.book.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
+OUTPUT 00.book.toc
+INPUT ./preface.tex
+INPUT ./preface.tex
+INPUT ./preface.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/newtx/txbmiaX.tfm
@@ -922,10 +926,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
-OUTPUT 00.book.toc
-INPUT ./preface.tex
-INPUT ./preface.tex
-INPUT ./preface.tex
 OUTPUT preface.aux
 INPUT ./preface.tex
 INPUT ./preface.tex
